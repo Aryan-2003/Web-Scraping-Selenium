@@ -1,0 +1,1295 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Santali Talking Dictionary</title>
+	<meta name="description" content="A searchable Santali-English lexicon." />
+    <meta name="keywords" content="Santali, dictionary, lexicon, english" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dictionaries/default/webfonts.css?v=2.2.1" rel="stylesheet" type="text/css" />
+    	<link href="/dictionaries/default/style.css?v=2.2.2" rel="stylesheet" type="text/css"
+media="only screen and (min-width : 481px), projection" />
+	<link href="/dictionaries/default/handheld.css?v=2.2.2" rel="stylesheet"
+type="text/css" media="handheld, only screen and (max-device-width:
+480px),only screen and (min-device-width: 768px) and
+(max-device-width: 1024px), only screen and (min-device-width: 600px)
+and (max-device-width: 1024px),only screen and (min-width : 320px) and
+(max-width : 480px)" />
+
+	<meta name="twitter:widgets:csp" content="on">
+
+	<link rel="SHORTCUT ICON" href="" />
+	<script src="/dictionaries/default/scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
+	<script src="/dictionaries/default/scripts/funcs.js?v=2.4.0" type="text/javascript"></script>
+	<script type="text/javascript">
+	var dictSettings = {
+	'flashPlayer': '/dictionaries/default/player.swf',
+	'GAacct': 'UA-29195701-1',
+	'GA4MeasurementID': 'G-91TVK07EE3',
+	};
+	</script>
+</head>
+<body>
+
+	<div id="header">
+		<div id="titleText">
+    	<img id="logo"  class="flagThumb" src="/dictionaries/santali/images/santali_flag-1.png" alt="Santali talking dictionary" />
+		<div style="clear:right;">
+			<h1>Santali <img class="trans-arrow" src="/dictionaries/santali/images/translate-logo.png" alt=" - " /> English</h1>
+		</div>
+		<h2>online talking dictionary</h2>
+	    <h3>version 1.0, 4.2013</h3>
+	</div>
+	<div style="clear:both"></div>
+</div>
+		<div id="content" onload="document.search.q.focus();">
+
+			<div id="searchContainer" class="searchbox">
+	<div><form name="search" id="search" method="GET" class="chunky" action="/santali/" accept-charset="utf-8">
+		 <p id="dropdown">
+		 	<label for="fields">Search:</label>
+    		<select name="fields" id="fields" tabindex="1">
+<option value="all" selected="selected">entire dictionary</option>
+<option value="lang">Santali headwords</option>
+<option value="gloss">English headwords</option>
+<option value="ipa">Santali pronunciation guide</option>
+			</select>
+		</p>
+		<p id="semantic_domains">
+			<label for="semantic_ids">Semantic domain:</label>
+			<select name="semantic_ids" id="semantic_ids" tabindex="2">
+    			<option value="">[all]</option>
+<option value="Agricultural">Agricultural</option>
+<option value="Agriculture">Agriculture</option>
+<option value="Alimentary">Alimentary</option>
+<option value="Animals">Animals</option>
+<option value="Animals Alimentary">Animals Alimentary</option>
+<option value="Bodily Secretion">Bodily Secretion</option>
+<option value="Body Part">Body Part</option>
+<option value="Clothing">Clothing</option>
+<option value="Color">Color</option>
+<option value="Fire and Cooking">Fire and Cooking</option>
+<option value="Health and Sickness">Health and Sickness</option>
+<option value="House">House</option>
+<option value="Hunting and Fishing">Hunting and Fishing</option>
+<option value="Kinship and People">Kinship and People</option>
+<option value="Material Culture">Material Culture</option>
+<option value="Music and Dance">Music and Dance</option>
+<option value="Numbers and Counting">Numbers and Counting</option>
+<option value="Religion and Beliefs">Religion and Beliefs</option>
+<option value="Tool">Tool</option>
+			</select>
+		</p>
+
+		<div id="q">
+			<label for="searchtext">Search for:</label>
+			<input type="text" name="q" id="searchtext"  value="*"  tabindex="3" />
+		</div>
+
+		<div class="toggle_div">
+			<a href="#" id="palette_toggle" title="toggle keyboard"><span style="display:none">show keyboard &#x25B8;</span><span>hide keyboard &#x25BE;</span></a>
+		</div>
+		<div id="character_palette" ><ul title="Click on letter to use in search."><li>All letters:</li><li><span>ɑ</span></li><li><span>ɑ̃</span></li><li><span>b</span></li><li><span>bʰ</span></li><li><span>c</span></li><li><span>cʰ</span></li><li><span>d</span></li><li><span>ɖ</span></li><li><span>e</span></li><li><span>ə</span></li><li><span>ə̃</span></li><li><span>ɛ</span></li><li><span>ɛ̃</span></li><li><span>g</span></li><li><span>h</span></li><li><span>i</span></li><li><span>j</span></li><li><span>jʰ</span></li><li><span>k</span></li><li><span>kʰ</span></li><li><span>l</span></li><li><span>m</span></li><li><span>n</span></li><li><span>ɲ</span></li><li><span>ŋ</span></li><li><span>o</span></li><li><span>ɔ</span></li><li><span>ɔ̃</span></li><li><span>p</span></li><li><span>pʰ</span></li><li><span>r</span></li><li><span>ɽ</span></li><li><span>s</span></li><li><span>t</span></li><li><span>tʰ</span></li><li><span>ʈ</span></li><li><span>u</span></li><li><span>ũ</span></li><li><span>w</span></li><li><span>w̃</span></li><li><span>y</span></li><li><span>ʔ</span></li><li><span>'</span></li></ul></div>		<p id="submit">
+    		<input type="submit" value="search" tabindex="4" />
+    </p>
+		<div class="specialsearchcontainer">
+  		  		<a class="specialsearch random" href="./?random" title="display a random entry" tabindex="7">surprise me</a>
+  		<a class="specialsearch reduplication" href="./?fields=all&amp;q=*&amp;reduplicated=2" title="show reduplicated words" tabindex="8">reduplication</a>
+  	</div>
+ 	</form>
+  
+	
+		<div id="paged_browsing" >
+							<span>browse the dictionary</span>&emsp;
+						<ul class="pages"  title="browse dictionary by Santali words">
+
+				
+					<li>
+												<a href="?initial=a&amp;page=1" class="page">a</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=%C9%91&amp;page=1" class="page">ɑ</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=b&amp;page=1" class="page">b</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=c&amp;page=1" class="page">c</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=d&amp;page=1" class="page">d</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=%CA%A4&amp;page=1" class="page">ʤ</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=%C9%96&amp;page=1" class="page">ɖ</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=e&amp;page=1" class="page">e</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=%C9%99&amp;page=1" class="page">ə</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=%C9%9B&amp;page=1" class="page">ɛ</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=g&amp;page=1" class="page">g</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=h&amp;page=1" class="page">h</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=i&amp;page=1" class="page">i</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=j&amp;page=1" class="page">j</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=k&amp;page=1" class="page">k</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=l&amp;page=1" class="page">l</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=m&amp;page=1" class="page">m</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=n&amp;page=1" class="page">n</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=%C9%B2&amp;page=1" class="page">ɲ</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=o&amp;page=1" class="page">o</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=%C9%94&amp;page=1" class="page">ɔ</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=p&amp;page=1" class="page">p</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=r&amp;page=1" class="page">r</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=s&amp;page=1" class="page">s</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=t&amp;page=1" class="page">t</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=%CA%A7&amp;page=1" class="page">ʧ</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=%CA%88&amp;page=1" class="page">ʈ</a>
+					</li>
+
+				
+					<li>
+												<a href="?initial=u&amp;page=1" class="page">u</a>
+					</li>
+
+				
+			</ul>
+
+			
+		</div>
+
+	
+
+
+ 	</div>
+
+</div>
+<div id="results">
+
+<p class="resultsReturned">Your search for <strong>*</strong> has returned <strong>100</strong> entries</p>
+<div class="entry " id="entry131">
+	<h3  >
+bili	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AN17_M_egg.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">egg</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=131" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry162">
+	<h3  >
+bir sukri	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AN51_M_wildboar.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">wild boar</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=162" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry186">
+	<h3  >
+bokoɲ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_HU6_M_youngerbrother.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">younger brother</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=186" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry255">
+	<h3  >
+buluk&#8217;	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP33_J_thigh_2.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">thigh</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=255" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry376">
+	<h3  >
+buɖiə	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Cult3_F_axe_2.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">axe</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=376" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry174">
+	<h3  >
+bɑbɑt&#8217;	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_O3_F_itch.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">itch</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=174" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry209">
+	<h3  >
+bɑle gidrə	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_HU33_F_baby.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">baby</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=209" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry117">
+	<h3  >
+bɑnɑ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AN3_M_bear.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">bear</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=117" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry393">
+	<h3  >
+bɑɽge	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Cult18_M_vegetablegarden.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">vegetable garden</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=393" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry426">
+	<h3  >
+bɔhɔ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_09_29_2011_R_GRM_Head.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">Noun</span> 
+<span class="gloss">Head</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span>,<br /><span class="dialect">Dialect: Singhbhum</ span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=426" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry460">
+	<h3  >
+bɔrɔ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_09_29_2011_R_GRM_Lung.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">Noun</span> 
+<span class="gloss">Lung</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span>,<br /><span class="dialect">Dialect: Singhbhum</ span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=460" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry64">
+	<h3  >
+bɔtəroʔ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj58_F_scared.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">scared</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=64" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry68">
+	<h3  >
+bəitɛ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj62_M_slow.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">slow</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=68" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry84">
+	<h3  >
+cetɑn	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AdP1_M_above.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adposition</span> 
+<span class="gloss">above</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=84" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry414">
+	<h3  >
+ceɽiŋ ɑɽɑk&#8217; kɑdiə	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj30b_F_free(v).mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">verb</span> 
+<span class="gloss">free (v)</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=414" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry304">
+	<h3  >
+cit&#8217;	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Pro26_F_what.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">pronoun</span> 
+<span class="gloss">what</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=304" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry301">
+	<h3  >
+cʰitlikɑ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Pro23_M_how.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">pronoun</span> 
+<span class="gloss">how</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=301" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry63">
+	<h3  >
+dukʰ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj57_M_sad.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">sad</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=63" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry71">
+	<h3  >
+dɑɽiɑn	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj65_M_strong.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">strong</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=71" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry190">
+	<h3  >
+dəi	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_HU10_F_oldersister.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">elder sister</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=190" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry236">
+	<h3  >
+dəɽiə	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP10_G_beard.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">beard</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=236" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry422">
+	<h3  >
+dəɽiə	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP10_G_beard.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">beard</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=422" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry433">
+	<h3  >
+dəʔɽia	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_09_29_2011_R_GRM_Beard.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">Noun</span> 
+<span class="gloss">Beard</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span>,<br /><span class="dialect">Dialect: Singhbhum</ span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=433" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry134">
+	<h3  >
+eŋgɑ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AN20_F_female.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">female</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=134" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry129">
+	<h3  >
+geɖe	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AN15_M_duck.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">duck</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=129" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry213">
+	<h3  >
+gɑte	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_HU37_F_friend.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">friend</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=213" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry354">
+	<h3  >
+gɛl bɑr	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Num12_F_twelve.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">twelve</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=354" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry10">
+	<h3  >
+heɖet&#8217;	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj10_F_boiled.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">boiled</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=10" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry182">
+	<h3  >
+hopon	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_HU2_F_son_2.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">son</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=182" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry181">
+	<h3  >
+hopon erɑ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_HU1_M_daughter.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">daughter</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=181" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry238">
+	<h3  >
+hoʈok&#8217;	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP12_J_neck.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">neck</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=238" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry55">
+	<h3  >
+hui dɑɽeɑʔɑ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj50_F_possible.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">possible</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=55" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry270">
+	<h3  >
+hɑrtɑ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP51_G_skin_3.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">skin</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=270" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry158">
+	<h3  >
+hɑti ɖɑʈɑ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AN48b_F_elephanttusk.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">elephant tusk</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=158" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry237">
+	<h3  >
+hɑtɑŋ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP11_G_brain.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">brain</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=237" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry51">
+	<h3  >
+hɑɽɑm hɔɽ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj46_F_oldperson_2.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">old (person)</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=51" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry201">
+	<h3  >
+hɔɽ ko	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_HU25_M_people.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">people</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=201" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry350">
+	<h3  >
+irɛl	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Num8_M_eight.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">eight</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=350" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry132">
+	<h3  >
+itil	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AN18_F_fat.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">fat (n)</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=132" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry254">
+	<h3  >
+iɖi	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP29_J_heel.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">heel</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=254" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry104">
+	<h3  >
+iɲɑʔ lɑhɑre	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AdP22_F_infrontof.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adposition</span> 
+<span class="gloss">in front of</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=104" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry110">
+	<h3  >
+jotokon cetɑn	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AdP28_M_ontop.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adposition</span> 
+<span class="gloss">on top</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=110" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry404">
+	<h3  >
+jəlɑm	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Cult28_M_net_2.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">net</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=404" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry381">
+	<h3  >
+jənoʔ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Cult9_F_broom.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">broom</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=381" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry444">
+	<h3  >
+kaʈub	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_09_29_2011_R_GRM_Finger.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">Noun</span> 
+<span class="gloss">Finger</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span>,<br /><span class="dialect">Dialect: Singhbhum</ span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=444" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry173">
+	<h3  >
+kukmu	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_O2_F_dream.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">dream</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=173" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry382">
+	<h3  >
+kɑɽɑm jənoʔ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Cult9a_F_hardbroom.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">hard broom</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=382" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry243">
+	<h3  >
+kɔɽɑm	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP17_G_chest.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">chest</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=243" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry342">
+	<h3  >
+kəʈik&#8217; bərti	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adv27_F_much.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adverb</span> 
+<span class="gloss">much</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=342" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry69">
+	<h3  >
+kəʈit&#8217;	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj63_F_small.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">small</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=69" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry98">
+	<h3  >
+kʰon	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AdP16_M_from.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adposition</span> 
+<span class="gloss">from</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=98" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry461">
+	<h3  >
+laʔi	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_09_29_2011_R_JNH_Stomach.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">Noun</span> 
+<span class="gloss">Stomach</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitender Nath Hasda</span>,<br /><span class="dialect">Dialect: Singhbhum</ span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=461" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry13">
+	<h3  >
+lo	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj13_F_burned.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">burned</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=13" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry79">
+	<h3  >
+lohot&#8217;	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj72_M_wet.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">wet</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=79" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry40">
+	<h3  >
+lolo	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj36_F_hot.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">hot</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=40" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry124">
+	<h3  >
+ludu	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AN10_M_cockroach.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">cockroach</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=124" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry231">
+	<h3  >
+mec&#8217;	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP5_G_eye.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">eye</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=231" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry232">
+	<h3  >
+mec&#8217; kəʈi	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP6_G_eyebrow.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">eyebrow</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=232" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry430">
+	<h3  >
+med kuʈi	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_09_29_2011_R_GRM_Eyebrow.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">Noun</span> 
+<span class="gloss">Eyebrow</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span>,<br /><span class="dialect">Dialect: Singhbhum</ span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=430" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry2">
+	<h3  >
+mit&#8217;	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj2_F_alone.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">alone</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=2" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry251">
+	<h3  >
+moloŋ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP25_G_forehead.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">forearm</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=251" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry112">
+	<h3  >
+mucət&#8217;	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AdP30_M_over_2.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adposition</span> 
+<span class="gloss">over</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=112" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry195">
+	<h3  >
+mɑmi	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_HU17a_F_aunt.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">aunt</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=195" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry42">
+	<h3  >
+mɑrɑŋ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj37b_M_big.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">big</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=42" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry366">
+	<h3  >
+mɔɽɛ gɛl	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Num50_M_fifty.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">fifty</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=366" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry300">
+	<h3  >
+nɔɖe	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Pro22_M_here.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">pronoun</span> 
+<span class="gloss">here</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=300" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry416">
+	<h3  >
+pə̃kɽə	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AN19_F_feather_2.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">feather</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=416" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry26">
+	<h3  >
+rohɔɽ jo	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj24b_M_dryfruit.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun phrase</span> 
+<span class="gloss">dry fruit</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=26" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry24">
+	<h3  >
+rohɔɽɑkɑnɑ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj23_F_dried.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">dried</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=24" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry272">
+	<h3  >
+ros	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP54_S_scrotum_2.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">scrotum</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=272" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry137">
+	<h3  >
+roʈe	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AN24_M_frog.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">frog</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=137" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry221">
+	<h3  >
+rɑndi erɑ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_HU46_F_widow.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">widow</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=221" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry143">
+	<h3  >
+si	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AN31_M_headlice.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">louse, head</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=143" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry215">
+	<h3  >
+sikəriə	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_HU39_F_hunter.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">hunter</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=215" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry252">
+	<h3  >
+sip&#8217; kɑʈuk&#8217;	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP26_J_littlefinger.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">little finger</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=252" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry448">
+	<h3  >
+sipkaʈub	</h3>
+	<div class="insides">
+		<p>
+<span class="pos">Noun</span> 
+<span class="gloss">Little finger</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitender Nath Hasda</span>,<br /><span class="dialect">Dialect: Singhbhum</ span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=448" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry177">
+	<h3  >
+so(h)	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_O6_M_smell.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">smell</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=177" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry32">
+	<h3  >
+somɑn	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj29_M_flat.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">flat</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=32" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry1">
+	<h3  >
+sɑnɑm	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj1_F_all_2.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">all</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=1" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry171">
+	<h3  >
+sɑsɑŋ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Col7_F_yellow_2.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">yellow</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=171" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry339">
+	<h3  >
+sənɑm jəgə ~ sɑnɑm jəgɑ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adv25_F_everywhere.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adverb</span> 
+<span class="gloss">everywhere</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=339" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry348">
+	<h3  >
+t(ə)rui	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Num6_M_six.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">six</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=348" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry61">
+	<h3  >
+tʰikʰ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj55_F_right.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">right</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=61" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry276">
+	<h3  >
+udgər	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP60_G_sweat.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">sweat</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=276" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry464">
+	<h3  >
+ula	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_09_29_2011_R_GRM_Vomit.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">Noun</span> 
+<span class="gloss">Vomit</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span>,<br /><span class="dialect">Dialect: Singhbhum</ span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=464" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry90">
+	<h3  >
+uniɑʔ mɑɽɑŋ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_AdP8_M_beforethat.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adposition</span> 
+<span class="gloss">before that</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=90" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry289">
+	<h3  >
+ɑbo	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Pro11_F_we.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">pronoun</span> 
+<span class="gloss">we</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=289" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry312">
+	<h3  >
+ɑlipe hɔɽ ɑm dəbɑm	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Pro34_F_we3.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">pronoun</span> 
+<span class="gloss">we 3+ (not you)</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=312" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry240">
+	<h3  >
+ɑlɑŋ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_BP14_J_tongue.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">tongue</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=240" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry293">
+	<h3  >
+ɑpe	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Pro15_M_yall_2.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">pronoun</span> 
+<span class="gloss">you (pl.)</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=293" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry387">
+	<h3  >
+ɑŋgrɑ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Cult13_F_ember.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">embers</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=387" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry82">
+	<h3  >
+ɑɖi mɑrɑŋ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj75_M_huge_2.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">huge</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=82" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry299">
+	<h3  >
+ɔɳɖe	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Pro21_M_there.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">pronoun</span> 
+<span class="gloss">there</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=299" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry383">
+	<h3  >
+ɖol jənoʔ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Cult9b_M_softbroom.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">soft broom</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitendhar Nath Hasdar</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=383" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry336">
+	<h3  >
+əɖi logən	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adv22_F_quickly.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adverb</span> 
+<span class="gloss">quickly</span></p>
+<p class="metadata"><span class="authority">Speaker: Sumita Murmu</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=336" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry18">
+	<h3  >
+ɲutʰ	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_Adj18_M_dark.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">adjective</span> 
+<span class="gloss">dark</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=18" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry175">
+	<h3  >
+ɲətum	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_O4_M_name.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">noun</span> 
+<span class="gloss">name</span></p>
+<p class="metadata"><span class="authority">Speaker: Suklal Besra</span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=175" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry451">
+	<h3  >
+ʤəŋa	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_09_29_2011_R_GRM_Foot.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">Noun</span> 
+<span class="gloss">Foot</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span>,<br /><span class="dialect">Dialect: Singhbhum</ span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=451" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry469">
+	<h3  >
+ʤəŋa rena rəma	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_09_29_2011_R_GRM_Toenail.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">Noun</span> 
+<span class="gloss">Toenail</span></p>
+<p class="metadata"><span class="authority">Speaker: Geeta Rani Murmu</span>,<br /><span class="dialect">Dialect: Singhbhum</ span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=469" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="entry " id="entry446">
+	<h3  >
+ʧuput	</h3>
+	<div class="insides">
+<a href="/media/santali/aud/Santali_09_29_2011_R_JNH_Fist.mp3" class="audio-file" target="_blank" title="click to listen"><span>listen</span><span style="display:none">loading</span><span style="display:none">playing</span></a>		<p>
+<span class="pos">Noun</span> 
+<span class="gloss">Fist</span></p>
+<p class="metadata"><span class="authority">Speaker: Jitender Nath Hasda</span>,<br /><span class="dialect">Dialect: Singhbhum</ span></p><span class="bookmark permalink"><a class="oid permalink" href="./?entry=446" rel="bookmark" title="bookmark">bookmark</a></span>	</div>
+	<div style="clear:both;"></div>
+</div>
+</div>
+<div id="footer">
+
+	<p id="total_entries" class="not_small">
+    	There are currently <strong>472</strong> entries, <strong>472</strong> audio files, and <strong>0</strong> images.
+    </p>
+    
+    <p id="copyright">
+	   All content copyright &copy; the Santali  community. (2013)<br/>
+	   Dictionary produced by Gregory D. S. Anderson and K. David Harrison. (2013).<br />
+	    All rights reserved. Do not distribute or reproduce without permission.<br />
+	    <span class="reference"><strong>how to cite:</strong>
+	    2013. Anderson, Gregory D.S. and K. David Harrison. 
+<i>Santali Talking Dictionary.</i>
+Living Tongues Institute for Endangered Languages. 
+<span class="hyphenate">http://www.talkingdictionary.org/santali</span>
+		</span>
+    </p>
+   
+    <p id="credits">
+    Interface and database design under the direction of <a href="http://jeremyfahringer.com" target="_blank">Jeremy Fahringer</a> and <a href="https://www.swarthmore.edu/its" target="_blank">Swarthmore College ITS</a>.
+    </p>  
+    <p id="supported_by">
+    	<strong>Supported by</strong><br />
+    	<a href="http://www.livingtongues.org" target="_blank"><img src="/dictionaries/default/images/livingtongueslogo-2012.gif" alt="Living Tongues Institute logo"  /></a>
+    	<a href="https://www.nationalgeographic.org/archive/projects/enduring-voices/expeditions/" target="_blank"><img src="/dictionaries/default/images/nglogo-2012.gif" alt="National Geographic Society logo" /></a>
+    	<a href="http://www.swarthmore.edu"><img src="/dictionaries/default/images/swarthmorelogo-2012.gif" alt="Swarthmore College logo" /></a>
+	</p>
+    
+</div>
+		</div>
+
+	
+</body>
+</html>
