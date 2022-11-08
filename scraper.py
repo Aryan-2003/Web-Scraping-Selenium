@@ -1,9 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from selenium.common import exceptions
 
 url = 'http://talkingdictionary.swarthmore.edu/santali/?fields=all&semantic_ids=&q='
-base_url = 'http://talkingdictionary.swarthmore.edu/santali/?initial=a&page=1'
+# base_url = 'http://talkingdictionary.swarthmore.edu/santali/?initial=a&page=1'
 
 def get_driver():
   chrome_options = Options()
@@ -19,6 +20,12 @@ def listToString(s):
         str1 += ele
  
     return str1
+
+def fetch_each_transalion(driver,url1):
+  driver.get(url1)
+  words = driver.find_elements(By.CLASS_NAME,'entry ')
+  return words
+  
 
 def fetch_words(url):
   driver = get_driver()
@@ -48,37 +55,54 @@ def fetch_audio(url):
   return audio_lst
 
 
-if __name__ == '__main__':
-  print('Creating the driver')
-  driver = get_driver()
-
-  print('Fetching the Page')
+def get_initials(driver):
   driver.get(url)
-
-  print('Fetching the Title')
-  print('Page Title : ', driver.title)
-
-  # Creating a list of each page initials
   li_divs = driver.find_elements(By.CLASS_NAME,"page")
   page_initial_list = []
-  for i in range(0,28):
+  for i in range(len(li_divs)):
     page_initial_list.append(li_divs[i].text)
+  return page_initial_list
 
 
-  english_words = []
-  santhali_words = []
-  audio_links = []
-  for init in page_initial_list:
-    url = 'http://talkingdictionary.swarthmore.edu/santali/?initial='+init+'&page=1'
-    tup = fetch_words(url)
-    aud = fetch_audio(url)
-    santhali_words = santhali_words + tup[0]
-    english_words = english_words + tup[1]
-    audio_links = audio_links + aud
+def fetch_details(driver,word):
+  audio_link = word.get_attribute('href')
+  return audio_link
+
+
+if __name__ == '__main__':
+  driver = get_driver()
+  page_initial_list = get_initials(driver)
+
+
+  # english_words = []
+  # santhali_words = []
+  # audio_links = []
+  # for init in page_initial_list:
+  #   url = 'http://talkingdictionary.swarthmore.edu/santali/?initial='+init+'&page=1'
+  #   tup = fetch_words(url)
+  #   aud = fetch_audio(url)
+  #   santhali_words = santhali_words + tup[0]
+  #   english_words = english_words + tup[1]
+  #   audio_links = audio_links + aud
     
-    # print(init)
+  #   # print(init)
 
-  print(len(santhali_words),len(english_words),len(audio_links))
+  # print(len(santhali_words),len(english_words),len(audio_links))
+
+
+    ###########
+  words = []
+  for init in page_initial_list:
+    url1 = 'http://talkingdictionary.swarthmore.edu/santali/?initial='+init+'&page=1'
+    words = words + fetch_each_transalion(driver,url1)
+
+  # print(len(words))
+  # print(words[0].text)
+
+  for word in words:
+    print(fetch_details(driver,word))
+    
+    
 
 
 
