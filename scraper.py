@@ -56,6 +56,7 @@ if __name__ == '__main__':
   santhali_words = [] 
   eng_words = [] 
   audio_links = [] 
+  grammer = [] 
 
   
   for init in initial_letters:
@@ -72,8 +73,10 @@ if __name__ == '__main__':
       english_word_lst = lst[2].split(' ')
       if len(english_word_lst)==1:
         english_word = english_word_lst[0]
+        grammer.append('NaN')
       else:
         english_word = listToString(english_word_lst[1:])
+        grammer.append(english_word_lst[0])
 
       eng_words.append(english_word)
       santhali_words.append(santali_word)
@@ -87,7 +90,8 @@ if __name__ == '__main__':
   df = pd.DataFrame({
     'Santhali_word':santhali_words,
     'English_words':eng_words,
-    'AUdio_links':audio_links
+    'Grammer' : grammer,
+    'Audio_links':audio_links
   })
 
   print(df)
