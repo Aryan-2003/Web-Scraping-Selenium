@@ -18,9 +18,9 @@ def get_driver():
 def listToString(s):
     str1 = ""
     for ele in s:
-        str1 += ele
+        str1 += ele+" "
  
-    return str1
+    return str1.strip()
  
 
 def fetch_word_divs(driver,base_url):
